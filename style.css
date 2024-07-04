@@ -31,6 +31,7 @@ body {
 .navigation ul {
     padding: 0px;
     margin: 0px;
+    text-decoration: none;
 }
 
 .navigation a {
@@ -48,10 +49,12 @@ body {
 .nav-link:hover {
     cursor: pointer;
     color: #2176FF;
+    text-decoration: none;
 }
   
 .nav-link:active{
     color: orange;
+    text-decoration: none;
 }
 
 .banner{
@@ -137,7 +140,7 @@ ul {
 }
 
 .report a:hover {
-    text-decoration: underline;
+    color: orange;
 }
 
 .footer {
