@@ -72,7 +72,11 @@ body {
     position: relative;
     font-family: "Bradley Hand";
     font-size: 35px;
-    color: antiquewhite;
+    color: #f4f4f4;
+}
+
+h1 {
+   color: #f4f4f4;
 }
 
 .container {
