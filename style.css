@@ -34,11 +34,6 @@ nav ul {
     text-align: center;
 }
 
-nav {
-    display: inline;
-    margin: 0 15px;
-}
-
 nav a {
     color: white;
     text-decoration: none;
@@ -67,6 +62,11 @@ nav a:hover {
     top: 100px;
     width: 100%;
   }
+
+.banner-text{
+    position: relative;
+    top: 200px;
+}
 
 .container {
     width: 80%;
