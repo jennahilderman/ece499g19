@@ -25,6 +25,7 @@ body {
     top: 0px;
     width: 100%;
     z-index: 999;
+    text-decoration: none;
 }
 
 .navigation ul {
@@ -55,7 +56,7 @@ body {
 
 .banner{
     background-image: url("solar_pannels_sky.jpeg");
-    background-position: center top;
+    background-position: center;
     background-size: cover;
     border-bottom: 10px solid #dddddd;
     height: 400px;
@@ -81,11 +82,35 @@ body {
     padding: 10px;
 }
 
+h1 {
+    color: #222;
+    font-family: 'Raleway',sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 h2 {
     color: #333;
     border-bottom: 2px solid #333;
     padding-bottom: 0.5em;
+    font-family: 'Amatic SC',sans-serif;
+    font-size: 30px;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
 }
+
+p{
+    color: #000000;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: left;
+  }
 
 .team-member {
     margin-bottom: 20px;
