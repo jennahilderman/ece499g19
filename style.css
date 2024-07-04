@@ -25,20 +25,32 @@ nav ul {
     text-align: center;
 }
 
-nav ul li {
+nav {
     display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
+nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav ul li a:hover {
+nav a:hover {
     text-decoration: underline;
 }
+
+.banner{
+    background-image: url("solar_pannels_sky.jpeg");
+    background-position: center top;
+    background-size: cover;
+    border-bottom: 1px solid #dddddd;
+    height: 700px;
+    position: relative;
+    text-align: center;
+    top: 100px;
+    width: 100%;
+  }
 
 .container {
     width: 80%;
