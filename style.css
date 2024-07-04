@@ -55,12 +55,13 @@ body {
     background-image: url("solar_pannels_sky.jpeg");
     background-position: center top;
     background-size: cover;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 10px solid #dddddd;
     height: 700px;
     position: relative;
     text-align: center;
     top: 100px;
     width: 100%;
+    padding: 10px;
   }
 
 .banner-text{
