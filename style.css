@@ -42,12 +42,12 @@ body {
     text-transform: uppercase;
 }
 
-.nav:hover {
+.nav-link:hover {
     cursor: pointer;
     color: #2176FF;
 }
   
-.nav:active{
+.nav-link:active{
     color: orange;
 }
 
