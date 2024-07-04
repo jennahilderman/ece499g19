@@ -14,7 +14,7 @@ header {
     padding: 1em 0;
 }
 
-nav {
+.navigation {
     background-color: #444;
     box-sizing: border-box;
     border-bottom: 1px solid #dddddd;
@@ -28,13 +28,13 @@ nav {
     z-index: 999;
 }
 
-nav ul {
+.navigation ul {
     list-style: none;
     padding: 0;
     text-align: center;
 }
 
-nav a {
+.navigation a {
     color: white;
     text-decoration: none;
     font-weight: bold;
