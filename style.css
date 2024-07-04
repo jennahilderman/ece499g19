@@ -42,8 +42,13 @@ body {
     text-transform: uppercase;
 }
 
-.navigation a:hover {
-    text-decoration: underline;
+.nav:hover {
+    cursor: pointer;
+    color: #2176FF;
+}
+  
+.nav:active{
+    color: orange;
 }
 
 .banner{
