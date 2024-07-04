@@ -140,10 +140,14 @@ ul {
 
 .footer {
     background-color: #333;
-    color: white;
+    color: #f4f4f4;
     text-align: center;
     padding: 1em 0;
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+.footer p{
+    color: #f4f4f4;
 }
