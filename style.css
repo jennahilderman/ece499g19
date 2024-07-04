@@ -75,7 +75,8 @@ body {
 
 .banner-text {
     position: relative;
-    top: 150px;
+    font-family: "Bradley Hand";
+    font-size: 35px;
 }
 
 .container {
