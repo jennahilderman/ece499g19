@@ -129,7 +129,7 @@ p {
     text-transform: uppercase;
 }
 
-#about p {
+p {
     margin: 0.5em 0 0;
     color: #666;
 }
