@@ -41,6 +41,7 @@ body {
     letter-spacing: 2px;
     padding: 10px 40px;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .nav-link:hover {
@@ -57,7 +58,7 @@ body {
     background-position: center top;
     background-size: cover;
     border-bottom: 10px solid #dddddd;
-    height: 700px;
+    height: 400px;
     position: relative;
     text-align: center;
     top: 100px;
