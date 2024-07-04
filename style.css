@@ -3,6 +3,12 @@ html {
     min-height: 100%;
 }
 
+.sacramento-regular {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+}  
+
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -58,11 +64,10 @@ body {
 
 .banner {
     background-image: url("solar_pannels_sky.jpeg");
+    opacity: 0.7;
     background-position: center;
     background-size: cover;
-    border-bottom: 10px solid #dddddd;
     height: 400px;
-    color: #222;
     position: relative;
     text-align: center;
     margin-top: 60px;
@@ -71,24 +76,27 @@ body {
 
 .banner-text {
     position: relative;
-    font-family: "Bradley Hand";
-    font-size: 35px;
-    color: #222;
-    margin: 20px;
+    padding: 80px;
+    opacity: 1;
 }
 
 h1 {
-   color: #f4f4f4;
+    color: #000;
+    font-family: "Sacramento";
+    font-size: 60px;
+    margin: 20px;
+    opacity: 1;
 }
 
 .container {
     margin-top: 60px;
     width: 80%;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 30px auto;
+    padding: 50px;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    padding: 30px;
+    border: 50px;
 }
 
 h2 {
