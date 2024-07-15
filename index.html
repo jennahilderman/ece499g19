@@ -59,7 +59,22 @@
     <section id="design">
         <div class="container">
             <h2>Design</h2>
-            <p>Our design involves building an MPPT solar charge controller that works with a solar panel or array of panels to charge a battery. The MPPT controller continuously tracks the maximum power point of the solar panels and adjusts the PWM duty cycle of the synchronous buck converter to ensure optimal voltage and efficient battery charging.</p>
+            <div class="diagram">
+                <img src="block-diagram.png" alt="MPPT Solar Charge Controller Block Diagram">
+                <p>Figure 1: Block diagram of the MPPT Solar Charge Controller</p>
+            </div>
+            <p>
+                The ESP32 MCU powers the MPPT solar charge controller and controls a synchronous buck converter that steps the voltage down to the desired charging voltage. The synchronous converter, known for its exceptional efficiency of up to 98%, consistently outperforms asynchronous converters that have an efficiency of up to 80%.
+            </p>
+            <p>
+                The system features an ACS712 current sensor, a crucial component that provides real-time feedback to the MCU about the current flowing from the solar panels. The MPPT algorithm uses this feedback to adjust the PWM duty cycle dynamically, maintaining the operation at the maximum power point. The system processes the sensor data through an ADS1015 Analog-to-Digital Converter (ADC).
+            </p>
+            <p>
+                The user interface allows users to monitor the charge controller, and the device is housed in a 3D-printed case. Future iterations will improve the interface and the housing for better functionality, durability, and aesthetics.
+            </p>
+            <p>
+                This design ensures maximum energy extraction from the solar panels under varying environmental conditions, significantly enhancing the efficiency and reliability of off-grid solar energy systems.
+            </p>
         </div>
     </section>
     <section id="results">
