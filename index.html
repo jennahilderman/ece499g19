@@ -41,26 +41,31 @@
             <div class="team-member">
                 <h3>Jenna Hilderman</h3>
                 <p>Student ID: V00870217</p>
-                <p>Jenna is pursuing a Bachelor of Engineering in Electrical Engineering at the University of Victoria. Her work for this project involves integrating an MPPT algorithm for optimal performance, especially under partial shading conditions, and creating the project's webpage. Proficient in C, Python, HTML, CSS and Matlab, she leverages her technical and analytical skills to tackle the solar panel optimization challenge.</p>
+                <p>
+                    Jenna is pursuing a Bachelor of Engineering in Electrical Engineering at the University of Victoria. Her work for this project involves integrating an MPPT algorithm for optimal performance, especially under partial shading conditions, and creating the project's webpage. Proficient in C, Python, HTML, CSS and Matlab, she leverages her technical and analytical skills to tackle the solar panel optimization challenge.
+                </p>
             </div>
             <h3>Faculty Supervisor: Dr. Mihai Sima</h3>
-            <p>Dr. Mihai Sima, an expert in computers, software, networking, electronics, and energy, supervises this project. His extensive knowledge and guidance have been greatly appreciated. Dr. Sima's expertise and support contributed to our project's progress and success.</p>
+            <p>
+                Dr. Mihai Sima, an expert in computers, software, networking, electronics, and energy, supervises this project. We greatly appreciate his extensive knowledge and guidance, which contributed to our project's progress and success.
+            </p>
         </div>
     </section>
     <section id="background">
         <div class="container">
             <h2>Background</h2>
             <p>
-                The global demand for renewable energy sources is increasing as the world seeks sustainable solutions. Solar energy, one of the most abundant and accessible renewable energy sources, has become a key focus for innovation and development. Solar panels, however, face the challenge of efficiently converting sunlight into electrical energy under varying environmental conditions. Maximum Power Point Tracking (MPPT) improves the efficiency of solar panels.
+                The global demand for renewable energy sources is increasing as the world seeks sustainable solutions. Solar energy is one of the most abundant and accessible renewable energy sources. Under varying environmental conditions,  solar panels do not efficiently convert sunlight into electrical energy. 
             </p>
             <p>
-                MPPT solar charge controllers play a crucial role in optimizing solar panel performance. By continuously adjusting the panels' operating point, these controllers strive to keep the panels operating at their maximum power point, regardless of changes in sunlight intensity, temperature, or other environmental factors. This optimization can significantly increase energy conversion efficiency, often by 30-40% compared to traditional methods.
+                MPPT solar charge controllers optimize solar panel performance by continuously adjusting the panel's operating point to maintain operation at its maximum power point. This point can be affected by changes in sunlight intensity, temperature, or other environmental factors. This optimization can significantly increase energy conversion efficiency.
             </p>
+            <div class="diagram">
+                <img src="pviv.png" alt="I-V and P-V Curves" style="width: 100%; height: auto;">
+                <p>Figure 1: I-V and P-V curves of a photovoltaic panel showing the maximum power point for a single sunlight intensity</p>
+            </div>
             <p>
-                MPPT technology is significant beyond efficiency gains. It plays a crucial role in making solar energy more accessible and practical. By enabling more reliable and consistent energy production, MPPT technology is essential for off-grid living and remote applications where a stable power supply is critical.
-            </p>
-            <p>
-                This project aims to design and build an efficient MPPT solar charge controller that will contribute to the broader adoption of solar energy. Our goal is to develop a solution that enhances energy conversion efficiency and provides a robust and user-friendly interface for monitoring and control.
+                MPPT technology is essential for off-grid living and remote applications, enabling more reliable and consistent energy production. This project aims to design an efficient and cost-effective MPPT controller that will improve solar energy production for the average consumer.
             </p>
         </div>
     </section>
@@ -69,19 +74,18 @@
             <h2>Design</h2>
             <p>
                 The ESP32 MCU powers the MPPT solar charge controller and controls a synchronous buck converter that steps the voltage down to the desired charging voltage. The synchronous converter, known for its exceptional efficiency of up to 98%, consistently outperforms asynchronous converters that have an efficiency of up to 80%.
-            </p>
             <p>
                 The system features an ACS712 current sensor, a crucial component that provides real-time feedback to the MCU about the current flowing from the solar panels. The MPPT algorithm uses this feedback to adjust the PWM duty cycle dynamically, maintaining the operation at the maximum power point. The system processes the sensor data through an ADS1015 Analog-to-Digital Converter (ADC).
             </p>
             <div class="diagram">
                 <img src="block_diagram.png" alt="MPPT Solar Charge Controller Block Diagram" style="width: 100%; height: auto;">
-                <p>Figure 1: Block diagram of the MPPT Solar Charge Controller</p>
+                <p>Figure 2: Block diagram of the MPPT Solar Charge Controller</p>
             </div>
             <p>
-                The user interface allows users to monitor the charge controller, and the device is housed in a 3D-printed case. Future iterations will improve the interface and the housing for better functionality, durability, and aesthetics.
+                The user interface allows users to monitor the charge controller. The MPPT controller sends data to a Blynk application for easy monitoring. The device is housed in a 3D-printed case. Future iterations will improve the interface and the housing for better functionality, durability, and aesthetics.
             </p>
             <p>
-                This design ensures maximum energy extraction from the solar panels under varying environmental conditions, significantly enhancing the efficiency and reliability of off-grid solar energy systems.
+                This design optimizes energy extraction from the solar panels under varying environmental conditions, significantly enhancing the efficiency and reliability of off-grid solar energy systems.
             </p>
         </div>
     </section>
