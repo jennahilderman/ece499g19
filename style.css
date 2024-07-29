@@ -31,6 +31,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 999;
+    margin-bottom: 120px;
 }
 
 .navigation ul {
@@ -56,7 +57,7 @@ body {
     color: #2176FF;
     text-decoration: none;
 }
-  
+
 .nav-link:active {
     color: orange;
     text-decoration: none;
@@ -94,7 +95,7 @@ h1 {
 }
 
 .container {
-    margin-top: 60px;
+    margin-top: 120px;
     width: 80%;
     margin: 30px auto;
     padding: 50px;
@@ -176,6 +177,14 @@ ul {
 .footer p{
     color: #f4f4f4;
     text-align: center;
+}
+
+:target::before {
+    content: "";
+    display: block;
+    height: 60px;
+    margin-top: -60px;
+    visibility: hidden;
 }
 
 @media (max-width: 768px) {
