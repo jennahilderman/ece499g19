@@ -73,7 +73,7 @@
                 <p>Figure 1: I-V and P-V curves of a photovoltaic panel showing the maximum power point for a single sunlight intensity.</p>
             </div>
             <p>
-                MPPT technology is essential for off-grid living and remote applications, enabling more reliable and consistent energy production. This project aims to design an efficient and cost-effective MPPT controller that will improve solar energy production for the average consumer.
+                One of the critical social issues this project addresses is the need for reliable and efficient energy solutions in areas with limited or no access to the traditional power grid. Many communities worldwide, especially in remote or developing regions, rely on off-grid solar systems for their energy needs. These systems could be more efficient. These systems often suffer from inefficiencies, leading to inadequate power supply and reduced battery life. By developing a Maximum Power Point Tracking (MPPT) solar charge controller, this project aims to improve solar energy conversion efficiency, ensuring that more energy is extracted and stored for use, even under varying sunlight conditions.
             </p>
         </div>
     </section>
@@ -81,19 +81,20 @@
         <div class="container">
             <h2>Design</h2>
             <p>
-                The ESP32 MCU powers the MPPT solar charge controller and controls a synchronous buck converter that steps the voltage down to the desired charging voltage. The synchronous converter, known for its exceptional efficiency of up to 98%, consistently outperforms asynchronous converters that have an efficiency of up to 80%.
+                The design of the MPPT solar charge controller focuses on enhancing solar energy conversion efficiency for off-grid applications by implementing Maximum Power Point Tracking (MPPT) technology. This controller aims to optimize energy extraction from solar panels by continuously adjusting to their maximum power point, increasing efficiency by 30-40% compared to traditional methods. The project leverages the open-source "1kW Arduino MPPT Solar Charge Controller" by ASCAS, which provides a comprehensive framework for developing a high-efficiency solar charge controller. The design integrates a microcontroller, a synchronous buck converter, and various sensors to optimize power flow from solar panels to batteries.
+            </p>
             <p>
-                The system features an ACS712 current sensor, a crucial component that provides real-time feedback to the MCU about the current flowing from the solar panels. The MPPT algorithm uses this feedback to adjust the PWM duty cycle dynamically, maintaining the operation at the maximum power point. The system processes the sensor data through an ADS1015 Analog-to-Digital Converter (ADC).
+                The design's key components include the ESP32 microcontroller, chosen for its computational power and low energy consumption. This microcontroller runs the Perturb and Observe (P&O) MPPT algorithm, dynamically adjusting the PWM duty cycle of the synchronous buck converter. This ensures that the solar panels operate at their optimal voltage under varying sunlight conditions. The synchronous buck converter, another critical component, efficiently steps down the solar panel voltage to match the battery charging requirements, aiming for an efficiency of around 98%. Current and voltage sensors provide real-time feedback to the microcontroller for accurate power calculations and adjustments.
             </p>
             <div class="diagram">
                 <img src="block_diagram.png" alt="MPPT Solar Charge Controller Block Diagram" style="width: 100%; height: auto;">
                 <p>Figure 2: Block diagram of the MPPT Solar Charge Controller.</p>
             </div>
             <p>
-                The user interface allows users to monitor the charge controller. The MPPT controller sends data to a Blynk application for easy monitoring. The device is housed in a 3D-printed case. Future iterations will improve the interface and the housing for better functionality, durability, and aesthetics.
+                The user interface allows users to monitor the charge controller. The MPPT controller sends data to a Blynk application for easy monitoring. The device is housed in a 3D-printed case.
             </p>
             <p>
-                This design optimizes energy extraction from the solar panels under varying environmental conditions, significantly enhancing the efficiency and reliability of off-grid solar energy systems.
+                Future recommendations include building breakout boards for easier debugging and incorporating additional features like LEDs and photosensors to ensure robust and asynchronous operation. Addressing these challenges can further refine the design and create a reliable and effective solution for sustainable off-grid energy systems.
             </p>
         </div>
     </section>
